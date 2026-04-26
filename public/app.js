@@ -10,13 +10,12 @@ import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/fireb
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-apiKey: "AIzaSyBEGUl4-lH4OQT55NDROlPCkth9_2TIqTQ",
-authDomain: "login-demo-31633.firebaseapp.com",
-projectId: "login-demo-31633",
-storageBucket: "login-demo-31633.firebasestorage.app",
-messagingSenderId: "161165318462",
-appId: "1:161165318462:web:288e4173f4fb8fa753f46f",
-measurementId: "G-LV5S3M1SWJ"
+  apiKey: "AIzaSyCsXsfhOjtS40FLE2LLCm9Vjk1Cdm2fn4k",
+  authDomain: "theatrical-indie-showcase.firebaseapp.com",
+  projectId: "theatrical-indie-showcase",
+  storageBucket: "theatrical-indie-showcase.firebasestorage.app",
+  messagingSenderId: "191699003537",
+  appId: "1:191699003537:web:25774a069de98ecdc9b730"
 };
 
 // Initialize Firebase
