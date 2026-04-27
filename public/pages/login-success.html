@@ -2,17 +2,33 @@
 <html>
     <head>
         <title>Login Page Demo</title>
-        <link rel="stylesheet" href="../index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
+        <!-- <link rel="stylesheet" href="../styles/index.css"> -->
+        <link rel="stylesheet" href="../styles/landing.css">
         <script type="module" src="../app.js" defer></script>
     </head>
     <body>
-        <main>
-            <!-- display text through app.js instead -->
+        <!-- display text through app.js instead -->
+        <header>
             <h1 id="welcome-message"></h1>
-            <p>If you're seeing this, it means the login was successful and you've been redirected to this page.</p>
-            <div id="email-info"></div>
-            <p>Thanks for visiting!</p>
+            <button id="sign-out-button">Sign Out</button>
+        </header>
+        <main>
+            <h2>Theatrical Indie Animated Productions (2025-2026)</h2>
+            <div id="animated-film-thumbnails">
+                <img class="thumbnail" src="../images/flow.webp">
+                <img class="thumbnail" src="../images/memoir-of-a-snail.webp">
+                <img class="thumbnail" src="../images/arco.webp">
+                <img class="thumbnail" src="../images/bfdi.webp">
+                <img class="thumbnail" src="../images/tadc.webp">
+            </div>
+            <h2>Theatrical Live Action Indie Productions (2025-2026)</h2>
+            <div id="live-action-film-thumbnails">
+                <img class="thumbnail" src="../images/anora.webp">
+                <img class="thumbnail" src="../images/the-substance.webp">
+                <img class="thumbnail" src="../images/the-brutalist.webp">
+                <img class="thumbnail" src="../images/iron-lung.webp">
+            </div>
         </main>
-        <button id="sign-out-button">Sign Out</button>
     </body>
 </html>

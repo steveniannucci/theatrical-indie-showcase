@@ -1,0 +1,55 @@
+body {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgb(105, 0, 0);
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: darkred;
+    padding: 20px 10px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 150px;
+    border: 2px solid white;
+}
+
+#animated-film-thumbnails, #live-action-film-thumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#welcome-message {
+    display: block;
+    margin: 0;
+}
+
+#sign-out-button {
+    display: block;
+    border: 1px solid white;
+    margin: 0;
+}
+
+input[type="submit"], button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 75px;
+    margin: 40px auto 10px auto;
+}
+
+input[type="submit"]:hover, button:hover {
+    background: rgb(52, 52, 52);
+    cursor: pointer;
+}
+
