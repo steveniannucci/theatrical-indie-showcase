@@ -219,8 +219,7 @@ onAuthStateChanged(auth, (user) => {
             .then((docSnapshot) => {
                 const userData = docSnapshot.data();
                 const username = userData.username;
-                welcomeMessageEl.textContent = `Welcome, ${username}.`;
-                emailInfoEl.textContent = `Your email address, ${user.email}, ${isEmailVerified} verified.`
+                welcomeMessageEl.textContent = `${username}`;
             });
     } else {
         // not signed in
