@@ -2,7 +2,7 @@ body {
     margin: 20px 0;
     padding: 20px;
     background: rgb(105, 0, 0);
-    text-align: center;
+    text-align: left;
     color: white;
     box-sizing: border-box;
 }
@@ -16,17 +16,15 @@ header {
     padding: 20px 10px;
 }
 
+/* h1 {
+    font-size: 24px;
+} */
+
 .thumbnail {
     width: 100px;
     height: 150px;
     border: 2px solid white;
-}
-
-#animated-film-thumbnails, #live-action-film-thumbnails {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    margin: 10px;
 }
 
 #welcome-message {
@@ -51,5 +49,51 @@ input[type="submit"], button {
 input[type="submit"]:hover, button:hover {
     background: rgb(52, 52, 52);
     cursor: pointer;
+}
+
+@media (max-width: 590px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="submit"], button {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px 55px;
+        margin: 40px auto 10px auto;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        background: darkred;
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 495px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type="submit"], button {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px 55px;
+        margin: 40px auto 10px auto;
+    }
 }
 
