@@ -61,6 +61,11 @@ button {
     margin: 10px auto 10px auto;
 }
 
+#logo-text {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
 #login-button, #signup-button {
     margin: 40px auto 10px auto;
 }
@@ -124,4 +129,36 @@ a {
 #login-error {
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    input[type="text"] {
+        border-radius: 5px;
+        padding: 10px;
+        width: 250px;
+        box-sizing: border-box;
+        margin: 10px 0 0 0;
+    }
+
+    input[type="password"] {
+        border-radius: 5px;
+        padding: 10px;
+        width: 250px;
+        box-sizing: border-box;
+    }
+
+    input[type="email"] {
+        border-radius: 5px;
+        padding: 10px;
+        width: 250px;
+        box-sizing: border-box;
+        margin: 10px 0 0 0;
+    }
+
+    input[type="password"] {
+        border-radius: 5px;
+        padding: 10px;
+        width: 250px;
+        box-sizing: border-box;
+    }
 }

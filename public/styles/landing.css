@@ -16,9 +16,10 @@ header {
     padding: 20px 10px;
 }
 
-/* h1 {
-    font-size: 24px;
-} */
+#logo-text {
+    text-align: center;
+    letter-spacing: 2px;
+}
 
 .thumbnail {
     width: 100px;
@@ -74,7 +75,7 @@ input[type="submit"]:hover, button:hover {
         justify-content: space-between;
         align-items: center;
         gap: 20px;
-        background: darkred;
+        background: #8b0000;
         padding: 20px 10px;
     }
 }
