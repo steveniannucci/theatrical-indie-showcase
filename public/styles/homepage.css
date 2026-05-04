@@ -1,7 +1,7 @@
 body {
     margin: 20px 0;
     padding: 20px;
-    background: rgb(105, 0, 0);
+    background: #690000;
     text-align: left;
     color: white;
     box-sizing: border-box;
@@ -16,6 +16,10 @@ body {
     padding: 20px 10px;
 }
 
+#username {
+    font-size: 1.75rem;
+}
+
 #logo-text {
     text-align: center;
     letter-spacing: 2px;
@@ -24,8 +28,13 @@ body {
 .thumbnail {
     width: 100px;
     height: 150px;
-    border: 2px solid white;
+    border: 3px solid gray;
     margin: 10px;
+}
+
+.thumbnail:hover, .thumbnail:focus {
+    border: 3px solid white;
+    cursor: pointer;
 }
 
 #welcome-message {
