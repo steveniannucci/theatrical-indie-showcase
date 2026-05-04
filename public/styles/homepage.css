@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
 }
 
-header {
+#banner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,12 +53,16 @@ input[type="submit"]:hover, button:hover {
 }
 
 @media (max-width: 590px) {
+    #username {
+        font-size: 1.5rem;
+    }
+
     h1 {
-        font-size: 24px;
+        font-size: 1.75rem;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     input[type="submit"], button {
@@ -69,7 +73,7 @@ input[type="submit"]:hover, button:hover {
         margin: 40px auto 10px auto;
     }
 
-    header {
+    #banner {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -81,12 +85,16 @@ input[type="submit"]:hover, button:hover {
 }
 
 @media (max-width: 495px) {
+    #username {
+        font-size: 1.5rem;
+    }
+
     h1 {
-        font-size: 22px;
+        font-size: 1.5rem;
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     input[type="submit"], button {

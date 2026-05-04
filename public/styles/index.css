@@ -14,26 +14,11 @@ body {
 
 label {
     display: block;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 10px 0 0 0;
 }
 
-input[type="text"] {
-    border-radius: 5px;
-    padding: 10px;
-    width: 300px;
-    box-sizing: border-box;
-    margin: 10px 0 0 0;
-}
-
-input[type="password"] {
-    border-radius: 5px;
-    padding: 10px;
-    width: 300px;
-    box-sizing: border-box;
-}
-
-input[type="email"] {
+input[type="text"], input[type="email"] {
     border-radius: 5px;
     padding: 10px;
     width: 300px;
@@ -56,6 +41,10 @@ input[type="submit"], button {
     margin: 40px auto 10px auto;
 }
 
+input::placeholder {
+    color: #555555;
+}
+
 button {
     border-radius: 5px;
     margin: 10px auto 10px auto;
@@ -76,7 +65,7 @@ input[type="submit"]:hover, button:hover {
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 a {

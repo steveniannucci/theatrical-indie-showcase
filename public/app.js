@@ -38,7 +38,7 @@ const signupButtonEl = document.querySelector("#signup-button");
 const sendPasswordResetEmailButtonEl = document.querySelector("#send-password-reset-email-button");
 
 // const userDetailsEl = document.querySelector("#userDetails");
-const welcomeMessageEl = document.querySelector("#welcome-message");
+const usernameEl = document.querySelector("#username");
 const emailInfoEl = document.querySelector("#email-info");
 
 // if (window.location.href.indexOf('password-reset.html') !== -1) {
@@ -121,7 +121,7 @@ if (window.location.href.indexOf('signup.html') !== -1) {
                     });
                 })
                 .then(function() {
-                    window.location.href = "/pages/login-success.html";
+                    window.location.href = "/pages/homepage.html";
                 })
                 .catch(function(error) {
                     console.error(error);
@@ -164,7 +164,7 @@ if (window.location.href.indexOf('index.html') !== -1 || window.location.href.en
                 .then((userCredential) => {
                     const user = userCredential.user;
                     if (user) {
-                        window.location.href = "/pages/login-success.html";
+                        window.location.href = "/pages/homepage.html";
                     }
                 })
                 .catch((error) => loginErrorEl.textContent = "Invalid username or password."
@@ -188,14 +188,14 @@ if (window.location.href.indexOf('index.html') !== -1 || window.location.href.in
                 });
             })
             .then(function() {
-                window.location.href = "pages/login-success.html";
+                window.location.href = "pages/homepage.html";
             })
             .catch((error) => console.log(error));
     };
 }
 
 // signOutBtnEl.onclick = () => auth.signOut();
-if (window.location.href.indexOf('login-success.html') !== -1) {
+if (window.location.href.indexOf('homepage.html') !== -1) {
     signOutButtonEl.onclick = () => {
         signOut(auth).then(() => {
             window.location.href = "../index.html";
@@ -219,7 +219,7 @@ onAuthStateChanged(auth, (user) => {
             .then((docSnapshot) => {
                 const userData = docSnapshot.data();
                 const username = userData.username;
-                welcomeMessageEl.textContent = `${username}`;
+                usernameEl.textContent = `${username}`;
             });
     } else {
         // not signed in
