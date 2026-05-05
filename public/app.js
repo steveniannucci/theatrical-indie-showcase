@@ -197,10 +197,14 @@ if (window.location.href.indexOf('index.html') !== -1 || window.location.href.in
 }
 
 // signOutBtnEl.onclick = () => auth.signOut();
-if (window.location.href.indexOf('homepage.html') !== -1) {
+if (window.location.href.indexOf('homepage.html') !== -1 || window.location.href.indexOf('pages/content-specific/') !== -1) {
     signOutButtonEl.onclick = () => {
         signOut(auth).then(() => {
-            window.location.href = "../index.html";
+            if (window.location.href.indexOf('pages/content-specific/') !== -1) {
+                window.location.href = "../../index.html";
+            } else {
+                window.location.href = "../index.html";
+            }
         }).catch((error) => {
             console.log("Error signing out user.")
         });
