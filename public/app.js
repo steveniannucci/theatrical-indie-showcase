@@ -41,6 +41,8 @@ const sendPasswordResetEmailButtonEl = document.querySelector("#send-password-re
 const usernameEl = document.querySelector("#username");
 const emailInfoEl = document.querySelector("#email-info");
 
+const backToMenuButtonEl = document.querySelector("#back-to-menu-button");
+
 // if (window.location.href.indexOf('password-reset.html') !== -1) {
 //     sendPasswordResetEmailButtonEl.onclick = () => {
 //         const email = document.querySelector("#email").value;
@@ -246,6 +248,10 @@ if (window.location.href.indexOf('index.html') !== -1 || window.location.href.in
         }
     }
 }
+
+backToMenuButtonEl.addEventListener("click", function() {
+    window.location.href = "../homepage.html";
+})
 
 //user.displayName = username
 //user.email = email
