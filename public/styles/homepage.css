@@ -31,10 +31,11 @@ body {
     height: 150px;
     border: 3px solid gray;
     margin: 10px;
+    text-decoration: none;
 }
 
 .thumbnail:hover, .thumbnail:focus {
-    border: 3px solid white;
+    border-color: white;
     cursor: pointer;
 }
 
@@ -83,6 +84,11 @@ li {
 
 a {
     color: white;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: underline;
 }
 
 #back-to-menu-button {
