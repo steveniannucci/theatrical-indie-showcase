@@ -1,6 +1,5 @@
 body {
     margin: 20px 0;
-    padding: 20px;
     background: #690000;
     text-align: left;
     color: white;
@@ -15,6 +14,7 @@ body {
     align-items: center;
     background: darkred;
     padding: 20px 10px;
+    margin: 20px;
 }
 
 #username {
@@ -94,6 +94,17 @@ a {
 #back-to-menu-button {
     display: block;
     margin: 40px auto;
+}
+
+main {
+    padding: 0 20px;
+}
+
+footer {
+    background-color: #520000;
+    padding: 20px;
+    margin: 40px 0 -20px 0;
+    text-align: center;
 }
 
 @media (max-width: 590px) {
